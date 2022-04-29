@@ -1,0 +1,4 @@
+packages/
+pyspark_venv
+notebooks/.*
+notebooks/pyspark_venv.tar.gz
