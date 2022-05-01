@@ -2,16 +2,13 @@ from mrjob.job import MRJob
 from mrjob.step import MRStep
 import re
 import pandas as pd 
-# -*- coding: utf-8 -*-
+
 
 from pyspark import SparkContext
 from pyspark.streaming import StreamingContext
 from pyspark.sql import Row, SparkSession
 
 from pyspark.sql.functions import regexp_extract
-
-# # Create a SparkSession (the config bit is only for Windows!)
-# spark = SparkSession.builder.config("spark.sql.warehouse.dir", "file:///hdfs://namenode:9000/dis_materials/data_reddit.csv").appName("StructuredStreaming").getOrCreate()
 
 
 class MostPopular(MRJob):
